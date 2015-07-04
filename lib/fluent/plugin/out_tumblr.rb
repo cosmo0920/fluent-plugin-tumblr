@@ -12,10 +12,10 @@ module Fluent
       super
     end
 
-    config_param :consumer_key, :string
-    config_param :consumer_secret, :string
-    config_param :oauth_token, :string
-    config_param :oauth_token_secret, :string
+    config_param :consumer_key, :string, :secret => true
+    config_param :consumer_secret, :string, :secret => true
+    config_param :oauth_token, :string, :secret => true
+    config_param :oauth_token_secret, :string, :secret => true
 
     config_param :tumblr_url, :string
     config_param :tags_template, :string
